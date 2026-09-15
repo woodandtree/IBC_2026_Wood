@@ -1,6 +1,6 @@
-# 5.1 Markdown Homework
+## 5.1 Markdown Homework
 
-# Add and commit file to github repository. Sync the remote and local repository.
+## Add and commit file to github repository. Sync the remote and local repository.
 
 ```bash
 woodZ@AT-AT MINGW64 ~/IBC_2026_Wood/Practials (main)
@@ -17,20 +17,17 @@ $ git log
 
 woodZ@AT-AT MINGW64 ~/IBC_2026_Wood/Practials (main)
 $ git push
+```
 
-```bash
+## 5.2 Semicolon-delimited to comma-delimited
 
-# 5.2 Semicolon-delimited to comma-delimited
-
-#Inside semicolon_csv_converter.sh
-
+### Inside semicolon_csv_converter.sh
 ```bash
 tr ";" "," < "$1" > "${1%.txt}_comma.csv"
-```bash
+```
+#### changes the ; to , and renames the file
 
-#changes the ; to , and renames the file
-
-#Actual change from Semicolon-delimited to comma-delimited
+### Actual change from Semicolon-delimited to comma-delimited
 
 ```bash
 woodZ@AT-AT MINGW64 ~/IntroBiolComp-2026/Unix/sandbox (main)
@@ -65,5 +62,23 @@ $ cat semicolon-delimited_comma.csv
 Year, carbonaria, typica
 1967, 47, 0
 1968, 58, 0
+```
 
+## Reupload to github
 ```bash
+woodZ@AT-AT MINGW64 ~/IBC_2026_Wood/Practials (main)
+$ git add .
+
+woodZ@AT-AT MINGW64 ~/IBC_2026_Wood/Practials (main)
+$ git status
+
+woodZ@AT-AT MINGW64 ~/IBC_2026_Wood/Practials (main)
+$ git commit -m "Added files for P3 and Updated P3"
+
+woodZ@AT-AT MINGW64 ~/IBC_2026_Wood/Practials (main)
+$ git log
+
+woodZ@AT-AT MINGW64 ~/IBC_2026_Wood/Practials (main)
+$ git push
+```
+
