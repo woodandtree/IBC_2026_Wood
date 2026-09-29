@@ -7,6 +7,16 @@
 #### git log shows everything that was commit so it can be used as a check
 #### git push pushes all this information from the local system to the remote system in github
 
+>[!TIP]
+>Al your code is correct. One quick note on Markdown: If you want your font to not be bold you can just write text without "#" prefacing.
+>For example:
+>```
+>## Title heading
+>Non-bolded text.
+>### Next heading
+>more text
+>```
+
 ```bash
 woodZ@AT-AT MINGW64 ~/IBC_2026_Wood/Practials (main)
 $ git add .
@@ -106,4 +116,5 @@ $ git log
 woodZ@AT-AT MINGW64 ~/IBC_2026_Wood/Practials (main)
 $ git push
 ```
-
+>[!NOTE]
+>Excellent answer. Well done!
