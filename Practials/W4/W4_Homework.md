@@ -1,7 +1,8 @@
 ```python
 # 6.1 About You Section
 ```
-
+>[!NOTE]
+>No need to use code boxes for every section. Your markdown will look a lot nicer if you use headings, normal text, and code boxes. 
 
 ```python
 %run about_me.py
@@ -39,7 +40,8 @@
     print ([33m"My favorite activity:"[39m, activity)
     print ([33m"My favorite animal:"[39m, animal)
     
-
+>[!WARNING]
+>This text looks odd. Did you paste it straight out of the terminal?
 
 
 ```python
