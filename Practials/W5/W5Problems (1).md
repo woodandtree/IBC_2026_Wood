@@ -1,7 +1,4 @@
-```python
-#4.1 Baking a Cake
-```
-
+4.1 Baking a Cake
 
 ```python
 # dessert = cake
@@ -21,17 +18,9 @@
     # add 5 minutes
     # repeat until cake(done)
 ```
+^the algorithm
 
-
-```python
-#^the algorithm
-```
-
-
-```python
-#4.2 Fizz buzz
-```
-
+4.2 Fizz buzz
 
 ```python
 # x = number[1, 100]
@@ -44,12 +33,7 @@
 # if divisble by both:
     #print("fizzbuzz")
 ```
-
-
-```python
-#^the algorithm
-```
-
+^the algorithm
 
 ```python
 x = 100
@@ -59,15 +43,9 @@ if x % 3 == 0:
 if x % 5 == 0:
     print("buzz")
 ```
-
     buzz
     
-
-
-```python
-#x is number and then if its divisble by 3 is prints fizz, if its divisible by 5 it prints buzz
-```
-
+x is number and then if its divisble by 3 is prints fizz, if its divisible by 5 it prints buzz
 
 ```python
 x = 15
@@ -82,13 +60,8 @@ else:
 
     fizz
     buzz
-    
 
-
-```python
-#I added else if it's not divisble by either then it'll say not fizz or buzz
-```
-
+I added else if it's not divisble by either then it'll say not fizz or buzz
 
 ```python
 x = 15
@@ -101,32 +74,18 @@ elif x % 5 == 0:
 else: 
     print("not fizz or buzz")
 ```
-
     fizzbuzz
-    
 
+added the line of fizzbuzz through using and to say if it's both these things then output fizzbuzz
 
-```python
-#added the line of fizzbuzz through using and to say if it's both these things then output fizzbuzz
-```
+4.3 GC Content from fasta
 
-
-```python
-#4.3 GC Content from fasta
-```
-
-
-```python
-#f = open ... opens the turkey file in jupyter and reads it
-#print f.read will read and print the file
-```
-
+f = open ... opens the turkey file in jupyter and reads it
+print f.read will read and print the file
 
 ```python
 f = open("Turkey_transcripts_15.fasta", "r")
 ```
-
-
 ```python
 print(f.read())
 ```
@@ -161,8 +120,7 @@ print(f.read())
     AGATGGACAGAGACATACGGACAGACCTCCAAGCCAACTAGAGGAGAGCCACGATGAACCTTCTTCCTTTCTTCTCCATTGAAACCTGGATCCTCTTGCTTATTTTTGTAGCCCTCCTGATAGCATATGGAACATGGCCATTTGGGCTGTTCAAGAAGCTGGGCATTCCTGGGCCAAGACCTCTGCCTTTCTTTGGGACGTGCCTGGAATACCGTAAAGGCTTCTTGGAATTTGACACTGAGTGCTTCAAGAAGTATGGGAAAATCTGGGGGATTTACGATGGCAGGCAGCCTGCAGTGGTTGTCATGGACCCCCAGATCATCAAAACCGTGCTGGTGAAAGAGTGCTACTCCACCTTCACCAACCGCAGGCGCGTAGATCTAGCAGGGGAGCTGAGAAATGCTGTCTCATTAGCTGAAGACGATCAGTGGAAAAGGCTCCGTACTGTGCTCTCTCCAACCTTCACCAGTGGGAAGCTAAAGGAGATGTTTCCTACAATGAAGCACTTTGGGGAGATGTTGGTGAAAAATGTTCAAAAGAGGGTGGAAAAGGACAGCTCTGTCCCTGTGAAGGACTTCTTTGGAAGCTACAGCATGGATGTAGTCACCAGCACTTCCTTCGGTGTGAACATCGACTCCATGAACAACCCTAAAAGCCCCTTTGTCAGAGAGATGCAGAAACTGACCAAGTTTGATTTTTTTGATCCACTCTTCATCTTGGCATTTGTATGCCCATTCCTTACCCCTCTTATGGCCAAGATGAACGTCAGCTTTTTCCCAAGTGATGCTGTAGATTTCTTCCTGAGGTCTATTGACAAAATTAAGAAGGACCGTGAAAAGGAGACTCACAAGGGCAGAGTAGATTTTCTGCAGATGATGATCGAATCCCAGAAATCAGACAGCGATGGGAAGAACTCACATAAAGCCCTGAGTGACATAGAGGTCCTGTCACAAGCATTCATCTTCATTTTTGCTGGCTATGAGCCCACCAGTAACACACTTTGTTACCTGGCTTACCTGCTGGCCTTGCATCCTGATGTACAGCAGAAGGTGGTGAATGAAATAGATACCATTCTACCCAACAAGGCTCCGCTCACATATGAAGCGATAATGCAGTTGGATTACCTTGACATGGCCGTGAATGAAACCCTCCGGCTCTATCCCCTCGGAGGACGGATTGAGAGAACCTGCAAGAAAGATGTGGAAATAAACGGGGTGACCATTCCAAAAGAAACCATTGTCGTTATCCCACCTTACACCCTGCACCGCAACTCCGAGTACTGGCCAAACCCAGAGGAGTTCAGACCAGAAAGGTTCAGTAAGGAAAACAAAGACAACATAGACCCATACACATACCTGCCTTTTGGAGCTGGTCCCAGGAACTGCATTGGGATGCGATTTGCTCTCTTGACTCTGAAAGTTGCCATCACTTCCATATTGCAGCACTTCACCTTCCAGGTCTGCAAAGAAACTCAGATCCCTCTCAAGCTGCTCTCGATGGGACTCATGACTCCAGAGAAGCCCATCATTCTCAAGTTAGTCCCTCGGACCAACAATGCCAAGGCATAGAACCCAACTGTGTCCTGCTGCAGTCTAATGAACCCTATGCTAACAAAGGGGTCACACACTGCAGGAAAACTCTCATACGTGTGCAGACACAGAAGTGCAACTTAGCTAATTCTAGAAGCAATTACTACATATTTACCAAATAACAGCTGTCAGAAATGTAATGTGGATCACTGGGCAGTGGCAATGCACAGCCCCCTTCATTTGATTGCAGAAATTGAGAAATAAATCCAAATGAGAAGCTGATCATCCACTCCCTTCTAAGGAGACTTCTCCATCTGGAAAGAAGGAATTATTGTGGCATTCAAGAGAAACAAGGTGTGATGGAAACGCAAATCGCTAGAGCTCGCTGGGCAGAGATGGGTGACTTTCTTCTTGGTGTAC
     >NM_001303153.1 Meleagris gallopavo glutathione S-transferase alpha class A1.1 (GSTA1.1), mRNA
     GAACGAGATCCAGTCAGTACAAGGCAGCAGGAAATCAGATACGTGGAAACATGTCTGGGAAGCCAGTTCTGCACTATCCCAACTCACGAGGCCGAATGGAATCAGTACGGTGGCTGCTAGCAGCTGCTGGGGTTGAGTTTGAAGAAAAATTTCTGGAAAAAAAGGAAGATCTCCAAAAGTTACAGTCGGATGGATCCCTGCTGTTCCAGCAAGTGCCCATGGTGGAGATCGATGGGATGAAGTTGGTGCAGACCAGAGCCATCCTCAACTACATCGCAGGGAAATACAACCTCTACGGGAAAGACGTGAAAGAGAGAGCCCTAATTGACATGTATGTGGAAGGAATGGCAGATCTGTATGAGTTAATCATGATGAACGTTGTCCAACCAGCAGATAAAAAGGAGGAACATCTTGCTAATGCTTTGGACAAGGCCACAAACAGATATTTCCCAGTCTTCGAAAAGATTTTGAACCACGGGCATGACTTTCTTGTTGGCAACAAGCTGAGCAGAGCTGATGTGAGTTTACTGGAAACCATTTTAGTGGTGGAAGAGCGCAAGCCTGATGCACTTGCAAAATTTCCTCTCTTGCAGAGTTTTAAAGCAAGAATAAGCAATACCCCCAACATCAAGAAATTCCTGCAGCCTGGCAGCCAGAGGAAACCACCTTTACAGGAAAAAGATATACCAAGTCTGATGGCAATTTTCCATTGAACATCAACCTAAACCCACTGAAACTCC
-    
-    
+
 
 
 ```python
@@ -180,36 +138,26 @@ with open("Turkey_transcripts_15.fasta","r") as infile, open("gc_contentturkey.t
                 outfile.write(name+"\t"+str(gc)+"\n")
 ```
 
+ the with open infile and open outfile lines open the read the fasta file and tells that whatever the output is it will be writen in a new file
+ 
+ need to define both seq and name
+ 
+ for each line that is in the infile do the following
+ 
+ white space of lines are removed with line = line.rstrip
+ 
+ put if seq so it know to compute the gc
+ 
+ name = line.split() tells it to split can each empty space including spaces
 
-```python
-# the with open infile and open outfile lines open the read the fasta file and tells that whatever the output is it will be writen in a new file
-# need to define both seq and name
-# for each line that is in the infile do the following
-# white space of lines are removed with line = line.rstrip
-# put if seq so it know to compute the gc
-# name = line.split() tells it to split can each empty space including spaces
-#the gc= lines calculates and tells the gc content
-```
-
+ the gc= lines calculates and tells the gc content
 
 ```python
 f = open("gc_contentturkey.txt","r")
 ```
 
-
 ```python
 print(f.read())
 ```
 
-    
-    
-
-
-```python
-#still is not computing how I would like but not giving any error codes 
-```
-
-
-```python
-
-```
+still is not computing how I would like but not giving any error codes 
