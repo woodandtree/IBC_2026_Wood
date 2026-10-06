@@ -1,8 +1,6 @@
-```python
-#5.1 Describe this code and Debug this code
-```
+5.1 Describe this code and Debug this code
 
-
+Describe the current code
 ```python
 import pickle
 #This imports the module pickle
@@ -48,21 +46,13 @@ print(get_amino_acids(test_mRNA))
 ```
 
     MNLLEV
-    
+
+
 
 
 ```python
 pdb
 ```
-
-
-
-
-    <module 'pdb' from 'C:\\Users\\woodZ\\miniconda3\\Lib\\pdb.py'>
-
-
-
-
 ```python
 import pdb #have to put this at the top otherwise won't read the pdb.set_trace() correctly
 import pickle
@@ -95,103 +85,31 @@ print(get_amino_acids(test_mRNA))
     
 # problem: the program returns MNLLEV instead of MEFSL!
 ```
-
-    > [32mc:\users\woodz\appdata\local\temp\ipykernel_25592\2052010941.py[39m([92m14[39m)[36mget_amino_acids[39m[34m()[39m
-    
-    
+Debugger (I suspected something was up with the i due to it be listed as 3/+3 everywhere except where it had +4
 
     ipdb>  i
-    
-
     0
-    
-
     ipdb>  aa_sequence
-    
-
     []
-    
-
-    ipdb>  codon
-    
-
+    ipdb>  codon #this gave error cause didn't go to next line using n but then figured out how to
     *** NameError: name 'codon' is not defined
-    
-
     ipdb>  n
-    
-
-    > [32mc:\users\woodz\appdata\local\temp\ipykernel_25592\2052010941.py[39m([92m15[39m)[36mget_amino_acids[39m[34m()[39m
-    
-    
-
     ipdb>  n
-    
-
-    > [32mc:\users\woodz\appdata\local\temp\ipykernel_25592\2052010941.py[39m([92m16[39m)[36mget_amino_acids[39m[34m()[39m
-    
-    
-
     ipdb>  i
-    
-
     0
-    
-
     ipdb>  n
-    
-
-    > [32mc:\users\woodz\appdata\local\temp\ipykernel_25592\2052010941.py[39m([92m17[39m)[36mget_amino_acids[39m[34m()[39m
-    
-    
-
     ipdb>  i
-    
-
     0
-    
-
     ipdb>  n
-    
-
-    > [32mc:\users\woodz\appdata\local\temp\ipykernel_25592\2052010941.py[39m([92m20[39m)[36mget_amino_acids[39m[34m()[39m
-    
-    
-
     ipdb>  n
-    
-
-    > [32mc:\users\woodz\appdata\local\temp\ipykernel_25592\2052010941.py[39m([92m22[39m)[36mget_amino_acids[39m[34m()[39m
-    
-    
-
     ipdb>  i
-    
-
     0
-    
-
     ipdb>  n
-    
-
-    > [32mc:\users\woodz\appdata\local\temp\ipykernel_25592\2052010941.py[39m([92m23[39m)[36mget_amino_acids[39m[34m()[39m
-    
-    
-
     ipdb>  i
-    
-
     4
-    
-
     ipdb>  q
-    
 
-
-```python
-#FIXED CODE
-```
-
+FIXED CODE
 
 ```python
 import pickle
@@ -217,21 +135,14 @@ def get_amino_acids(mRNA):
     return "".join(aa_sequence)
     
 # problem: the program returns MNLLEV instead of MEFSL!
-```
 
-
-```python
 print(get_amino_acids(test_mRNA))
 ```
 
     MEFSL
-    
 
 
-```python
-#5.2 Gobbler Proteins
-```
-
+5.2 Gobbler Proteins
 
 ```python
 import pickle
