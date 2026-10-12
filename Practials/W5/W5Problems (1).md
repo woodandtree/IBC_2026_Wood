@@ -22,7 +22,7 @@
 >[!NOTE]
 >This is good overall, but it may have been more helpful to put your `if` statements inside a`while` loop that runs while the knife comes out with batter, since tHis would be more similar to how you'd code this in most languages:
 >```
->knife == batter sticks
+>knife = batter sticks
 >while knife == batter sticks
 >    knife == poke(cake)
 >    if knife == [clean]
