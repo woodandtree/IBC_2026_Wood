@@ -1,4 +1,4 @@
-4.1 Baking a Cake
+## 4.1 Baking a Cake
 
 ```python
 # dessert = cake
@@ -19,8 +19,18 @@
     # repeat until cake(done)
 ```
 ^the algorithm
-
-4.2 Fizz buzz
+>[!NOTE]
+>This is good overall, but it may have been more helpful to put your `if` statements inside a`while` loop that runs while the knife comes out with batter, since tHis would be more similar to how you'd code this in most languages:
+>```
+>knife == batter sticks
+>while knife == batter sticks
+>    knife == poke(cake)
+>    if knife == [clean]
+>        cake(done)
+>    else
+>        add 5 min
+>````
+## 4.2 Fizz buzz
 
 ```python
 # x = number[1, 100]
@@ -78,7 +88,10 @@ else:
 
 added the line of fizzbuzz through using and to say if it's both these things then output fizzbuzz
 
-4.3 GC Content from fasta
+>[!NOTE]
+>The conditionals in your algorithm are OK, but it only works for one number at a time. To play *fizzbuzz* from 1 to 100 you could have run a loop that outputs the number, *fizz*, *buzz*, or *fizzbuzz* based on your conditionals, for each number between 1 and 100.  
+
+## 4.3 GC Content from fasta
 
 f = open ... opens the turkey file in jupyter and reads it
 print f.read will read and print the file
@@ -161,3 +174,6 @@ print(f.read())
 ```
 
 still is not computing how I would like but not giving any error codes 
+> [!NOTE]
+> This is a good initial try. You are right that asking whether the line starts with `>`, and if so splitting that line to just get the sequence name is a good first step.
+> You seemed to be trying to calculate the gc content within the `if` statement that ran lines started with `>`, which wouldn't work since these contain sequence information, and not the sequence itself. An `else` or `elif` statement that runs when the line contains a sequence would have allowed you to calculate the GC content for the sequence.  
