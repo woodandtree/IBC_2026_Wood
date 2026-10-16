@@ -1,6 +1,6 @@
 # Assignment 1
 ## 1.
-#### A.
+#### A. DONE ON BASH
     cd IntroCompBio-2026/ #cd moves me into the directory that holds the files I need to pull from the remote GitHub
     git pull #this pulls the files from the remote GitHub into my folders so I can access the required files
 
@@ -15,6 +15,33 @@
        17
      grep -w -c "^22"  Gesquiere2011_data.csv #repeat pervious code but look at 22 instead of 8
        5
+#### C. DONE ON BASH
+###### Script Written:
+    #defined the two arguements that will be used to run the script 
+    #file will be arguement 1 and will tell the computer what file to read
+    #id will be arguement 2 and will tell the computer to look for this specfic id/number
+    file=$1
+    id=$2
+
+    #read this file and find this id number
+    #this code just shows all the data and shows every single thing with the number
+    #grep "$id" "$file"
+
+    #-w this ensure that it just counts the number with no decimals and things like that
+    #-c counts the amount of times that the number appears
+    #grep -w -c "$id" "$file"
+    #still giving me to many counts of the number
+
+    #added the ^ to say to only look for the number at the beginning of the line
+    grep -w -c "^$id" "$file"
+
+###### Script Ran:
+     #bash signals to read the script and run it, the script them follows, joined by the file name and the number that is trying to be found
+     bash countsamples1C.txt Gesquiere2011_data.csv 8
+        17
+     bash countsamples1C.txt Gesquiere2011_data.csv 22
+        5
+#### D. 
 
 
 
