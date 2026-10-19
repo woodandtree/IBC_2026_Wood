@@ -1,0 +1,17 @@
+#defined the two arguements that will be used to run the script 
+#file will be arguement 1 and will tell the computer what file to read
+#id will be arguement 2 and will tell the computer to look for this specfic id/number
+file=$1
+id=$2
+
+#read this file and find this id number
+#this code just shows all the data and shows every single thing with the number
+#grep "$id" "$file"
+
+#-w this ensure that it just counts the number with no decimals and things like that
+#-c counts the amount of times that the number appears
+#grep -w -c "$id" "$file"
+#still giving me to many counts of the number
+
+#added the ^ to say to only look for the number at the beginning of the line
+grep -w -c "^$id" "$file"
