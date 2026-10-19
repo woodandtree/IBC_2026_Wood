@@ -216,3 +216,12 @@
         3 French Hens
         2 Turtle Doves
         A Partridge in a Pear Tree
+## 4.
+    git add .
+    #add all existing files
+    git status
+    #check to see if files are added
+    git commit -m "Add files for A1"
+    #commit the file to the system and name it
+    git push
+    #push the files to the remote github server
