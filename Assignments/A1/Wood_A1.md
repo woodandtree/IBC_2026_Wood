@@ -60,16 +60,34 @@
     bash changetocomma1D.txt Gesquiere2011_data.csv
     #Output was the file Num_samples.csv
 ## 2.
-#### A. 
+#### A. DONE ON BASH
     curl -o o.txt https://www.gutenberg.org/cache/epub/1228/pg1228.txt
     #the curl command downloads the link and then the -o names the link o.txt
-#### B.
+#### B. DONE ON BASH
     #used grep --help to look at option of commands to "pair" with grep
     grep -i "sterility" o.txt | wc -w
         947
     grep -i "isolation" o.txt | wc -w
         112
     #grep find the thing asked for, -i says to ignore the different cases(upper and lower), then the word wanted is listed and the file name, wc -w says to count the number of times these words appear
+#### C. DONE ON BASH
+    grep -i "sterility" -B 3 -A 3 o.txt > sterility.txt
+    grep -i "isolation" -B 3 -A 3 o.txt > isolation.txt
+    #from the previous command used -B 3 and -A 3 was added to include the 3 lines before and the 3 lines after each word and then input it into the txt file
+#### D. DONE ON JUPYTER
+    conda install conda-forge::wordcloud
+    #this is the code conda said to use to install the wordcloud
+    !wordcloud_cli --text sterility.txt --imagefile sterility.png
+    !wordcloud_cli --text isolation.txt --imagefile isolation.png
+    #this is the way github said to write the code to make the wordcloud with the changes in the text to fit the right one, isolation or sterility
+    #the ! tell jupyter to run it correctly
+    Sterility Image
+    ![sterility](sterility.png)
+
+    Isolation Image
+    ![isolation](isolation.png)
+#### E. 
+
 
 
 
