@@ -52,7 +52,7 @@
     #sort -n sorts all the information in field 1 numerically
     #uniq -c counts how often each seperate time each id appears
     #awk flips the column to format it to print the id and then the number of times in appears
-    #tr "\t" "," I thought changed the file from tabs to separate to commas but it appears to put the two numbers in             different sheet columns A and B
+    #tr "\t" "," I thought changed the file from tabs to separate to commas but it appears to put the two numbers in different sheet columns A and B
     #> says to output it as a file named num_samples.csv
 
     #the | uses what was just gathered and runs the next thing
