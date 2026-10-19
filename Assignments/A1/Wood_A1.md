@@ -86,7 +86,6 @@
 
     Isolation Image
     ![isolation](isolation.png)
-    # CHECK LATER NOT WORKING RIGHT **********************EMAIL PROFESSOR TMRW**************************************
 #### E. 
 ###### Based on my word clouds I think that Darwin did talk a little bit about speciation specifically sterility in hybrids and mentioning fertility a few times in the sterility word cloud. In the isolation word cloud the words natural selection and species were also mentioned but isolation in general was mentioned way less than sterility. Thus I believe that we definitely discussed pieces of the process but perhaps not the complete process as a whole. 
 ## 3.
