@@ -82,10 +82,11 @@
     #this is the way github said to write the code to make the wordcloud with the changes in the text to fit the right one, isolation or sterility
     #the ! tell jupyter to run it correctly
     Sterility Image
-    ![sterility](sterility.png)
+    ![sterility](Assignments/A1/sterility.png)
 
     Isolation Image
-    ![isolation](isolation.png)
+    ![isolation](Assignments/A1/isolation.png)
+    # CHECK LATER NOT WORKING RIGHT **********************EMAIL PROFESSOR TMRW**************************************
 #### E. 
 
 
