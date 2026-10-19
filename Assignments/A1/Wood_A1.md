@@ -90,10 +90,130 @@
 #### E. 
 ###### Based on my word clouds I think that Darwin did talk a little bit about speciation specifically sterility in hybrids and mentioning fertility a few times in the sterility word cloud. In the isolation word cloud the words natural selection and species were also mentioned but isolation in general was mentioned way less than sterility. Thus I believe that we definitely discussed pieces of the process but perhaps not the complete process as a whole. 
 ## 3.
-#### A. 
+#### DONE ON JUPYTER
+###### Script Written:
+    #!/usr/bin/env python3
 
+    days = {1: "A Partridge in a Pear Tree", 2:"2 Turtle Doves", 3:"3 French Hens", 4:"4 Colly Birds", 5:"5 Gold Rings", 6:"Geese-a-Laying", 7: "Swans-a-Swimming", 8:"Maids-a-Milking", 9:"Ladies Dancing", 10:"Lords-a-Leaping", 11:"Pipers Piping", 12:"Drummers Drumming"}
+    #made a dictionary relating each phrase with their day number and named in under days
 
+    names = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth", "Tenth", "Eleventh", "Twelfth"]
+    #made a list of each day and named it names
 
+    #for i in the dict from 1 to 12 used 13 because otherwise no 12
+    #print the song with names included so first second etc.
+    #used i-1 because it will match the number and the names correctly
+    for i in range(1,13):
+        print("On the", names[i-1], "day of Christmas my true love gave to me")
+    
+    for j in range(i, 0, -1):
+        print(days[j])
+    print("\n")
+    
+    #the i, 0 , -1 says to start at a number and count down to 0 without going past
+    #print the dictionary for that number and counting down the rest
+    #then in prints a new line and starts again
+###### Script Ran:
+    %run 12daysC.py
+    #%run to run the python script 
+        On the First day of Christmas my true love gave to me
+        A Partridge in a Pear Tree
 
+        On the Second day of Christmas my true love gave to me
+        2 Turtle Doves
+        A Partridge in a Pear Tree
 
-     
+        On the Third day of Christmas my true love gave to me
+        3 French Hens
+        2 Turtle Doves
+        A Partridge in a Pear Tree
+
+        On the Fourth day of Christmas my true love gave to me
+        4 Colly Birds
+        3 French Hens
+        2 Turtle Doves
+        A Partridge in a Pear Tree
+
+        On the Fifth day of Christmas my true love gave to me
+        5 Gold Rings
+        4 Colly Birds
+        3 French Hens
+        2 Turtle Doves
+        A Partridge in a Pear Tree
+
+        On the Sixth day of Christmas my true love gave to me
+        Geese-a-Laying
+        5 Gold Rings
+        4 Colly Birds
+        3 French Hens
+        2 Turtle Doves
+        A Partridge in a Pear Tree
+
+        On the Seventh day of Christmas my true love gave to me
+        Swans-a-Swimming
+        Geese-a-Laying
+        5 Gold Rings
+        4 Colly Birds
+        3 French Hens
+        2 Turtle Doves
+        A Partridge in a Pear Tree
+
+        On the Eighth day of Christmas my true love gave to me
+        Maids-a-Milking
+        Swans-a-Swimming
+        Geese-a-Laying
+        5 Gold Rings
+        4 Colly Birds
+        3 French Hens
+        2 Turtle Doves
+        A Partridge in a Pear Tree
+
+        On the Ninth day of Christmas my true love gave to me
+        Ladies Dancing
+        Maids-a-Milking
+        Swans-a-Swimming
+        Geese-a-Laying
+        5 Gold Rings
+        4 Colly Birds
+        3 French Hens
+        2 Turtle Doves
+        A Partridge in a Pear Tree
+
+        On the Tenth day of Christmas my true love gave to me
+        Lords-a-Leaping
+        Ladies Dancing
+        Maids-a-Milking
+        Swans-a-Swimming
+        Geese-a-Laying
+        5 Gold Rings
+        4 Colly Birds
+        3 French Hens
+        2 Turtle Doves
+        A Partridge in a Pear Tree
+
+        On the Eleventh day of Christmas my true love gave to me
+        Pipers Piping
+        Lords-a-Leaping
+        Ladies Dancing
+        Maids-a-Milking
+        Swans-a-Swimming
+        Geese-a-Laying
+        5 Gold Rings
+        4 Colly Birds
+        3 French Hens
+        2 Turtle Doves
+        A Partridge in a Pear Tree
+
+        On the Twelfth day of Christmas my true love gave to me
+        Drummers Drumming
+        Pipers Piping
+        Lords-a-Leaping
+        Ladies Dancing
+        Maids-a-Milking
+        Swans-a-Swimming
+        Geese-a-Laying
+        5 Gold Rings
+        4 Colly Birds
+        3 French Hens
+        2 Turtle Doves
+        A Partridge in a Pear Tree
