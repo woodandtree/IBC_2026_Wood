@@ -82,12 +82,16 @@
     #this is the way github said to write the code to make the wordcloud with the changes in the text to fit the right one, isolation or sterility
     #the ! tell jupyter to run it correctly
     Sterility Image
-    ![sterility](Assignments/A1/sterility.png)
+    ![sterility](sterility.png)
 
     Isolation Image
-    ![isolation](Assignments/A1/isolation.png)
+    ![isolation](isolation.png)
     # CHECK LATER NOT WORKING RIGHT **********************EMAIL PROFESSOR TMRW**************************************
 #### E. 
+###### Based on my word clouds I think that Darwin did talk a little bit about speciation specifically sterility in hybrids and mentioning fertility a few times in the sterility word cloud. In the isolation word cloud the words natural selection and species were also mentioned but isolation in general was mentioned way less than sterility. Thus I believe that we definitely discussed pieces of the process but perhaps not the complete process as a whole. 
+## 3.
+#### A. 
+
 
 
 
