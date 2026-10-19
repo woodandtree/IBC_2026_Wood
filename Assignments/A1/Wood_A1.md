@@ -61,6 +61,15 @@
     #Output was the file Num_samples.csv
 ## 2.
 #### A. 
+    curl -o o.txt https://www.gutenberg.org/cache/epub/1228/pg1228.txt
+    #the curl command downloads the link and then the -o names the link o.txt
+#### B.
+    #used grep --help to look at option of commands to "pair" with grep
+    grep -i "sterility" o.txt | wc -w
+        947
+    grep -i "isolation" o.txt | wc -w
+        112
+    #grep find the thing asked for, -i says to ignore the different cases(upper and lower), then the word wanted is listed and the file name, wc -w says to count the number of times these words appear
 
 
 
