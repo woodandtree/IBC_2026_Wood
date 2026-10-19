@@ -41,7 +41,26 @@
         17
      bash countsamples1C.txt Gesquiere2011_data.csv 22
         5
-#### D. 
+#### D. DONE ON BASH
+###### Script Written:
+    #tr says to take whatever the separator is in this case a space and change it to a comma
+    #input this into the file represented by $1 and then output the file Num_samples.csv
+
+    cut -f1 "$1" | sort -n | uniq -c | awk '{print $2 "\t" $1}' | tr "\t" "," > "Num_samples.csv"
+   
+    #cut -f1 "$1" pulls all the information from field 1 
+    #sort -n sorts all the information in field 1 numerically
+    #uniq -c counts how often each seperate time each id appears
+    #awk flips the column to format it to print the id and then the number of times in appears
+    #tr "\t" "," I thought changed the file from tabs to separate to commas but it appears to put the two numbers in             different sheet columns A and B
+    #> says to output it as a file named num_samples.csv
+
+    #the | uses what was just gathered and runs the next thing
+###### Script Ran:
+    bash changetocomma1D.txt Gesquiere2011_data.csv
+    #Output was the file Num_samples.csv
+## 2.
+#### A. 
 
 
 
