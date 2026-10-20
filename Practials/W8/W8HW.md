@@ -43,6 +43,22 @@
         1 Non-Risk 36.96878
         2     Risk 37.31296
 ###### found aggregate which will put the data given into a table the data being the connection between risks and nA1A2 in the data geno_risks and finding the mean
+## Data CleanUp
+#### 1.
+    > smith <-read.table("C:/Users/woodZ/IBC_2026_Wood/Practials/W8/Smith2003_data.txt", header=T, fill=TRUE)
+###### read the table and named it smith, it does have a header so that is true, it didn't want to run at first because it loses a column halfway through the dataset so found the fill=TRUE command will fill that space and continue to read to code
+    > length(smith$nasomaculatus)
+        5735
+###### measures the number of elements/species in the dataset smith under nasomaculatus which holds the different species
+#### 2. 
+    > smith[c(-999)] <- NA
+###### used the replacing tool discussed in class, in the dataset smith take all the -999 and replace them with NA
+    > smith[smith == -999] <- NA
+###### that one didn't work -999 is not reading correctly so decided to say in smith when equal to -999 replace with NA
+###### when I printed it the entire table was zero need to make it only column 7 and 8
+    > smith[smith[,7] == -999] <- NA
+    > smith[smith[,8] == -999] <- NA
+###### geared it directly towards column 7 and 8 but still get error, this time for missing values?
 
 
 
