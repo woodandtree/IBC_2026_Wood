@@ -102,6 +102,8 @@
         }
 ###### for a image in leafimage find the area using getArea and put it into the empty data frame named results and loop and repeat till done
 
+## 3. 
+
 ###### need to extract the timepoint and which plant it is so went back and changed original code
 
         library(EBImage)
@@ -112,12 +114,6 @@
           pattern = "JPG",
           full.names = FALSE
         )
-
-        timepoint <- sub("_.*", "", f)
-###### removes everything after the _, dont replace with anything, do it to f
-
-        plant <- sub(".*_", "", f)
-###### removes everything before the _, dont replace with anything, do it to f
 
         results <- data.frame(
           file = character(),
@@ -130,21 +126,37 @@
         source("C:/Users/woodZ/IBC_2026_Wood/Practials/W9/getArea.R")
 
         for (f in leafimage) {
+
+            name <- basename(f) 
+###### the name is the basename of f so the separate files
+            parts <- split(name, "_")[[1]] 
+###### split the names by their _ separator and name it parts so that one part can be 1 and the other 2
+###### ?split
+
+            timepoint <- parts[1]
+###### is the first part of the basename
+
+            plant <- parts[2]
+###### is the second part of the basename
   
-          area <- getArea(f)
+            area <- getArea(f)
   
-          results <- rbind(
-            results,
-            data.frame(
-              file = f,
-              area = area,
-              timepoint = timepoint,
-              plant = plant
-            )
-          )
-        }
+            results <- rbind(
+                results,
+                data.frame(
+                  file = f,
+                  area = area,
+                  timepoint = timepoint,
+                  plant = plant
+                )
+              )
 
 ###### struggling with Question 3
+###### the results are only showing time point as the whole thing instead of that part split
 
+## 4. 
 
-
+###### Although I am unable to figure out Q3 this is how to write the file into a csv
+        write.csv(results, "leafarea.csv")
+###### write.csv will write the file and then use the data from results and name it the results.csv
+###### not sure why but it is not making a file. 
