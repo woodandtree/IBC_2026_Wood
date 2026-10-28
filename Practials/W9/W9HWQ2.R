@@ -52,12 +52,6 @@ leafimage <- list.files(
   full.names = FALSE
 )
 
-timepoint <- sub("_.*", "", f)
-#removes everything after the _, dont replace with anything, do it to f
-
-plant <- sub(".*_", "", f)
-#removes everything before the _, dont replace with anything, do it to f
-
 results <- data.frame(
   file = character(),
   area = numeric(),
@@ -69,6 +63,16 @@ results <- data.frame(
 source("C:/Users/woodZ/IBC_2026_Wood/Practials/W9/getArea.R")
 
 for (f in leafimage) {
+  
+name <- basename(f) #the name is the basename of f so the separate files
+parts <- split(name, "_")[[1]] #split the names by their _ separator and name it parts so that one part can be 1 and the other 2
+#?split
+
+timepoint <- parts[1]
+#is the first part of the basename
+
+plant <- parts[2]
+#is the second part of the basename
   
   area <- getArea(f)
   
@@ -84,4 +88,10 @@ for (f in leafimage) {
 }
 
 #struggling with Question 3
+#the results are only showing time point as the whole thing instead of that part split
 
+
+#Although I am unable to figure out Q3 this is how to write the file into a csv
+setwd("C:/Users/woodZ/IBC_2026_Wood/Practials/W9")
+write.csv(results, "leafarea.csv")
+#write.csv will write the file and then use the data from results and name it the results.csv
