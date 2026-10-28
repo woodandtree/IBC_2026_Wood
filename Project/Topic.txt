@@ -1,0 +1,7 @@
+
+Look at how climate may impact the beech tree disease. I would use bash to download and possibly make the file for the climate data. I could use python or R to merge and combine the datasets together and R to use more mathematical side of things (can use some stuff I learned from biostats for like interpreting the data). I know that R is also good for graphs so I could make a graph and present the data better. 
+
+Dataset for Beech Trees Damaged Acres from 2021 (gives a couple states so maybe I can find the average damage of each states disease and then compare with the climate overall to see if the difference climates of the different place have an effect on the disease): https://usfs.hub.arcgis.com/datasets/1fa9bf92c88e4eb69bf6d94a31fc46e8/explore?layer=18&location=43.033531%2C-114.869740%2C3&showTable=true
+
+Dataset for Climate of states (this is one a website that shows me the history temperatures and percipitation may need to turn it into a file or write the info in a file because its not downloadable as a file):https://usclimatedata.com/climate/acme/pennsylvania/united-states/uspa1863
+ 
